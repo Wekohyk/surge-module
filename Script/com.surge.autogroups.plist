@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.surge.autogroups</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/weko/.surge-patch/inject_autogroups.py</string>
+    </array>
+
+    <!-- 监听配置文件变化，Surge 每次更新后自动触发 -->
+    <key>WatchPaths</key>
+    <array>
+        <string>/Users/weko/Library/Mobile Documents/com~apple~CloudDocs/surge/WestData.conf</string>
+    </array>
+
+    <!-- 加载时立即执行一次，修复当前配置 -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/weko/.surge-patch/inject_autogroups.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/weko/.surge-patch/inject_autogroups.log</string>
+</dict>
+</plist>
