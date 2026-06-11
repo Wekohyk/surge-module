@@ -1,0 +1,19 @@
+#!name=WestData 自动延迟分组
+#!desc=按地区自动选最低延迟节点，主配置更新后不受影响
+#!system=iOS, macOS
+
+[Proxy Group]
+HK = select,HK-Auto,🇭🇰 Hong Kong | 01,🇭🇰 Hong Kong | 02,🇭🇰 Hong Kong | 03,🇭🇰 Hong Kong | 04,🇭🇰 Hong Kong | 05,🇭🇰 Hong Kong | 06,🇭🇰 Hong Kong | 07,🇭🇰 Hong Kong | 08
+HK-Auto = url-test,🇭🇰 Hong Kong | 01,🇭🇰 Hong Kong | 02,🇭🇰 Hong Kong | 03,🇭🇰 Hong Kong | 04,🇭🇰 Hong Kong | 05,🇭🇰 Hong Kong | 06,🇭🇰 Hong Kong | 07,🇭🇰 Hong Kong | 08,url=http://www.gstatic.com/generate_204,interval=600,tolerance=100
+
+JP = select,JP-Auto,🇯🇵 Japan | 01,🇯🇵 Japan | 02,🇯🇵 Japan | 03,🇯🇵 Japan | 04,🇯🇵 Japan | 05,🇯🇵 Japan | 06,🇯🇵 Japan | 07,🇯🇵 Japan | 08
+JP-Auto = url-test,🇯🇵 Japan | 01,🇯🇵 Japan | 02,🇯🇵 Japan | 03,🇯🇵 Japan | 04,🇯🇵 Japan | 05,🇯🇵 Japan | 06,🇯🇵 Japan | 07,🇯🇵 Japan | 08,url=http://www.gstatic.com/generate_204,interval=600,tolerance=100
+
+SG = select,SG-Auto,🇸🇬 Singapore | 01,🇸🇬 Singapore | 02,🇸🇬 Singapore | 03,🇸🇬 Singapore | 04,🇸🇬 Singapore | 05,🇸🇬 Singapore | 06,🇸🇬 Singapore | 07,🇸🇬 Singapore | 08
+SG-Auto = url-test,🇸🇬 Singapore | 01,🇸🇬 Singapore | 02,🇸🇬 Singapore | 03,🇸🇬 Singapore | 04,🇸🇬 Singapore | 05,🇸🇬 Singapore | 06,🇸🇬 Singapore | 07,🇸🇬 Singapore | 08,url=http://www.gstatic.com/generate_204,interval=600,tolerance=100
+
+TW = select,TW-Auto,🇨🇳 Taiwan | 01,🇨🇳 Taiwan | 02,🇨🇳 Taiwan | 03,🇨🇳 Taiwan | 04,🇨🇳 Taiwan | 05,🇨🇳 Taiwan | 06,🇨🇳 Taiwan | 07,🇨🇳 Taiwan | 08
+TW-Auto = url-test,🇨🇳 Taiwan | 01,🇨🇳 Taiwan | 02,🇨🇳 Taiwan | 03,🇨🇳 Taiwan | 04,🇨🇳 Taiwan | 05,🇨🇳 Taiwan | 06,🇨🇳 Taiwan | 07,🇨🇳 Taiwan | 08,url=http://www.gstatic.com/generate_204,interval=600,tolerance=100
+
+US = select,US-Auto,🇺🇸 United States | 01,🇺🇸 United States | 02,🇺🇸 United States | 03,🇺🇸 United States | 04,🇺🇸 United States | 05,🇺🇸 United States | 06,🇺🇸 United States | 07,🇺🇸 United States | 08
+US-Auto = url-test,🇺🇸 United States | 01,🇺🇸 United States | 02,🇺🇸 United States | 03,🇺🇸 United States | 04,🇺🇸 United States | 05,🇺🇸 United States | 06,🇺🇸 United States | 07,🇺🇸 United States | 08,url=http://www.gstatic.com/generate_204,interval=600,tolerance=100
